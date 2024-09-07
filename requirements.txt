@@ -1,0 +1,4 @@
+discord
+discord.py
+discord.py[voice]
+watchdog

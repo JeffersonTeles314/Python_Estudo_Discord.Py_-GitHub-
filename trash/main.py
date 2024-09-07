@@ -1,5 +1,9 @@
 import discord
+import dotenv
 from discord.ext import commands
+import os
+
+dotenv.load_dotenv()
 
 cliente = commands.Bot(command_prefix='.')
 
@@ -7,4 +11,4 @@ cliente = commands.Bot(command_prefix='.')
 async def on_ready():
     print('O Bot Está Pronto')
     
-cliente.run('NjUwNzczNjg1NDkzMzAxMjU4.GlQRwM.5a4vEUbqhoE1HWc1-_5w-lbXFcY5IxkTaZrTys')
+cliente.run(os.getenv("API_KEY"))
